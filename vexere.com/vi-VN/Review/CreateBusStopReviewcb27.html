@@ -1,0 +1,123 @@
+<link rel="shortcut icon" type="image/x-icon" href="https://storage.googleapis.com/fe-production/tp/images/favicon.ico" />
+<!-- CSS -->
+<link type="text/css" href="../../css/popup1.0dc7c.css?v=0.0.10" rel="stylesheet" />
+<style>
+    body {
+        margin: 0 !important;
+    }
+</style>
+<!-- END CSS -->
+
+    <link type="text/css" href="../../tp/css/vxr-loading.css" rel="stylesheet" />
+
+
+<div id="page">
+    <!--popup-->
+    <div class="wrapper-pop">
+    <div class="title-pop">
+        <img src="../../../storage.googleapis.com/fe-production/tp/images/pop-ico-pen.jpg" alt="" />
+        Viết đánh giá
+        <img class="pop-logo hidden-xs" src="../../../storage.googleapis.com/fe-production/tp/images/pop-logo.jpg" alt="" />
+    </div>
+    <div class="pop-content">
+        <form id="busrating" name="busrating" method="post" action="https://vexere.com/vi-VN/Review/CreateBusStopReview">
+            <input type="hidden" id="BusStopId" name="BusStopId" value="765" />
+            <div class="left-col">
+                <div class="nhaxe clearfix">
+                    <p><b>B&#x1EBF;n xe Mi&#x1EC1;n &#x110;&#xF4;ng</b></p>
+                </div>
+                <div class="form-nhaxe clearfix">
+                    op
+
+                    <div class="check-input-name">
+                        <span class="fa fa-user input-icon hidden-sm"></span>
+                        <input id="firstName" name="FirstName" class="txt rating-input-item" type="text" placeholder="Họ tên: *" />
+                        <span class="alert-no"></span>
+                        <span class="alert-yes"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="check-input-email">
+                        <span class="fa fa-envelope input-icon hidden-sm"></span>
+                        <input id="email" name="Email" class="txt rating-input-item" type="text" placeholder="Email: *" />
+                        <span class="alert-no"></span>
+                        <span class="alert-yes"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p>Viết đánh giá (tối thiểu 100 chữ)</p>
+                    <div class="check-input-cmt">
+                        <span class="fa fa-comment input-icon hidden-sm"></span>
+                        <textarea id="comment" class="rating-input-item" name="Comment" placeholder="Chia sẻ những trải nghiệm quý giá của bạn sẽ giúp cho các hành khách khác lựa chọn được chuyến đi tốt nhất."></textarea>
+                        <span class="alert-no"></span>
+                        <span class="alert-yes"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-col">
+                <h6 class="hidden-xs">
+                    <img src="../../../storage.googleapis.com/fe-production/tp/images/pop-ico-danhgia.png" alt="" />Đánh giá:
+                </h6>
+                <div class="alert-text">(Vui lòng bấm <img src='../../../storage.googleapis.com/fe-production/tp/images/pop-star-silver.png' alt='' /> để đánh giá)</div>
+                <div class="pop-option-rate rate-chuyendi">
+                    <span class="alert-yes"></span>
+                    <span class="alert-no"></span>
+                    <p><span>Tổng thể:</span></p>
+                    <div class="pop-point-rate pop-point-rate-item" data-id="OverallRating">
+                    </div>
+                    <p id="OverallRatingHint">Trung bình</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pop-point-rate pop-option-rate rate-chuyendi">
+                    <span class="alert-yes"></span>
+                    <span class="alert-no"></span>
+                    <p><span>An toàn:</span></p>
+                    <div class="pop-point-rate pop-point-rate-item" data-id="SafetyRating">
+                    </div>
+                    <p id="SafetyRatingHint">Trung bình</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pop-option-rate">
+                    <span class="alert-yes"></span>
+                    <span class="alert-no"></span>
+                    <p><span>Dịch vụ:</span></p>
+                    <div class="pop-point-rate pop-point-rate-item" data-id="ServiceRating">
+                    </div>
+                    <p id="ServiceRatingHint">Trung bình</p>
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="pop-ckb-confirm">
+                <input class="pop-ckb CheckBoxClass" id="condition" type="checkbox" />
+                <label id="Label1" for="condition" class="CheckBoxLabelClass">&nbsp;</label>
+                <p>Tôi xác nhận rằng đánh giá này hoàn toàn dựa trên trải nghiệm cá nhân của tôi khi đi chuyến này và tôi không có mối quan hệ cá nhân hay kinh doanh với các hãng xe. Tôi hiểu rằng Vexere hoàn toàn không chấp nhận các đánh giá giả.</p>
+            </div>
+            <a class="btn-danhgia" href="javascript:;">Gửi Đánh giá</a>
+        </form>
+    </div>
+
+</div>
+
+    <!--end popup-->
+</div>
+
+<!-- JS-->
+<script src="../../js/third-party/jquery/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="../../js/amlich.min.js"></script>
+<script type="text/javascript" src="../../tp/js/jquery-ui-amlich.mindc7c.js?v=0.0.10"></script>
+<script type="text/javascript" src="../../js/partials/customDatePicker1.0.js"></script>
+<script type="text/javascript" src="../../js/vendors/raty/jquery.raty.min.js"></script>
+
+            <script src="../../js/homelanguage.vidc7c.js?v=0.0.10"></script>
+
+    <script type="text/javascript" src="../../js/busstopreview1.1dc7c.js?v=0.0.10"></script>
+    <script type="text/javascript">
+$(document).ready(function () {
+            //Khởi tạo các thuộc tính popup
+            initReviewBusStopPopup();
+        });</script>
+
+
+

@@ -1,0 +1,29 @@
+﻿ul.link-list {
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+  overflow: hidden; }
+
+ul.link-list li {
+  display: inline-block;
+  border-right: 1px solid #bebebe;
+  padding-right: 8px;
+  line-height: 16px;
+  margin: 3px 8px 3px 0; }
+
+ul.link-list li:last {
+  border-right: none; }
+
+.back-links h2 {
+  font-weight: normal;
+  color: #4c4c4c;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 3px; }
+
+.back-links ul {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=nosidebar1.0.css.map */
